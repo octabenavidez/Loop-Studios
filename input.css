@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h5{
+        @apply w-52 text-2xl uppercase font-light text-white absolute bottom-4 md:bottom-8 px-6 md:px-10 group-hover:text-black group-hover:scale-110 transition duration-200;
+    }
+}
+
+.creation-gradient{
+    @apply absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white opacity-70;
+}
+
+#hero{
+    background-image: url(../images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 480px) {
+    #hero{
+        background-image: url(../images/mobile/image-hero.jpg);
+        background-position: center;
+    }
+ 
+}
